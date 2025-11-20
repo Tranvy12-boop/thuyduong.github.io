@@ -3,65 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio của Thùy Dương - Trang Chủ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px 0;
-        }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .project-card {
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .project-card h3 {
-            color: #2c3e50;
-        }
-    </style>
+    <title>Portfolio Của Thùy Dương - SEO & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Chào mừng đến với Portfolio của Thùy Dương</h1>
-        <p>Tôi là người đẹp nhất trên đời và là một nhà phát triển/designer đầy đam mê.</p>
-    </div>
-
-    <div class="container">
-        <h2>Giới Thiệu</h2>
-        <p>Đây là nơi tôi thể hiện các dự án và kỹ năng của mình. Tôi chuyên về [quản lý thời gian], [lên kế hoạch kinh tế] và luôn tìm kiếm thử thách mới!</p>
-        
-        <h2>Các Dự Án Tiêu Biểu</h2>
-        
-        <div class="project-card">
-            <h3>Dự Án 1: [Thiện nguyện]</h3>
-            <p>Mô tả ngắn gọn về dự án này. Tôi đã  lên kế hoạch cho các sự án thiện nguyện giúp các mảnh đời khó khăn để xây dựng nó.</p>
-            <p><a href="#" style="color: #3498db; text-decoration: none;">Xem Dự Án (Live Demo)</a></p>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/150" alt="Ảnh đại diện Thùy Dương" class="profile-pic">
+            <h1>Tôi là Thùy Dương</h1>
+            <p class="tagline">Nhà đầu tư đầy đam mê & Nhà sáng lập TD COFFEE.</p>
+            <div class="social-links">
+                <a href="https://github.com/thuyduong" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/thuyduong" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#projects" class="btn-primary">Xem Dự Án Của Tôi</a>
         </div>
+    </header>
 
-        <div class="project-card">
-            <h3>Dự Án 2: [Bán bánh tráng]</h3>
-            <p>Đây là một dự án cá nhân tập trung vào [kinh doanh]. Nó thể hiện khả năng của tôi trong [chi tiêu và xem xét tình hình kinh tế thị trường].</p>
-            <p><a href="#" style="color: #3498db; text-decoration: none;">Xem Mã Nguồn (GitHub)</a></p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Về Tôi</h2>
+            <p>Xin chào! Tôi là Thùy Dương, một nhà đầu tư và nhà khởi nghiệp đa năng với 3 năm kinh nghiệm trong việc tạo ra các trải nghiệm kinh doanh kỹ thuật số đẹp mắt. Tôi yêu thích việc biến những ý tưởng phức tạp thành các giải pháp đơn giản, trực quan và hấp dẫn người tiêu dùng. Khi không bận với những số liệu, tôi thường đọc sách, vẽ tranh, đi du lịch.</p>
+            <h3>Kỹ Năng</h3>
+            <div class="skills-grid">
+                <span>Nhà khởi nghiệp</span>
+                <span>Phát triển thị trường chứng khoáng</span>
+                <span>Nhà sáng lập TD Coffee</span>
+                <span>Lãnh đạo trẻ</span>
+                <span>Đẻ 2 đứa con cho puppy</span>
+            </div>
         </div>
+    </section>
 
-        <h2>Liên Hệ</h2>
-        <p>Email: [Duongtntcs200432@gmail.com] | Facebook: [https://www.facebook.com/thuy.duong.74705]</p>
-    </div>
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>Dự Án Nổi Bật</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/3498db/FFFFFF?text=Dự+Án+Web+1" alt="Dự án Web 1">
+                    <h3>Thiện nguyện cho mái ấm tình thương</h3>
+                    <p>Mô tả ngắn gọn về dự án này. Tôi đã lãnh đạo nhóm tổ chức sự kiện gồm 10 thành viên, chịu trách nhiệm lập kế hoạch, huy động nguồn lực và quản lý hậu cần cho chương trình kéo dài 2 tuần tại Cần Thơ. Dự án này đã giúp tôi nâng cao đáng kể kỹ năng Lãnh đạo tình nguyện, Giải quyết vấn đề và Quản lý dự án với ngân sách hạn chế.".</p>
+                    <a href="#" target="_blank" class="project-link">Xem Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank" class="project-link">Mã Nguồn (GitHub) <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/FFFFFF?text=Ứng+Dụng+Di+Động+2" alt="Dự án Di Động 2">
+                    <h3>Xuân yêu thương</h3>
+                    <p>Mô tả ngắn gọn về dự án thứ hai. Tôi đã lãnh đạo nhóm tổ chức chuỗi hoạt động giao lưu văn hóa, văn nghệ và hỗ trợ chăm sóc cá nhân cho các cụ tại Viện Dưỡng Lão tại Cần Thơ trong suốt 2 tháng.
+
+Mục tiêu là giảm sự cô đơn và mang lại niềm vui tinh thần. Tôi chịu trách nhiệm lập kế hoạch hoạt động, quản lý lịch trình tình nguyện viên và tạo nội dung truyền thông (online/offline) để kêu gọi sự tham gia của cộng đồng.
+
+Dự án này không chỉ rèn luyện kỹ năng quản lý nhân sự và sự kiện của tôi, mà còn giúp tôi phát triển khả năng đồng cảm và giao tiếp trong môi trường nhạy cảm.".</p>
+                    <a href="#" target="_blank" class="project-link">https://www.facebook.com/share/p/1H5MjMKUWc/ <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank" class="project-link"> dự án <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/FFFFFF?text=Thiết+Kế+UI/UX+3" alt="Dự án UI/UX 3">
+                    <h3> Làm người vợ đảm đan</h3>
+                    <p> Tôi yêu tiền nhưng Puppy mới là nhất.</p>
+                    <a href="#" target="_blank" class="project-link">Xem tên tui nè là bt đẹp người rồi hehe <33<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Liên Hệ</h2>
+            <p>Bạn có một dự án thú vị không? Hay chỉ muốn chào hỏi? Đừng ngần ngại liên hệ với tôi!</p>
+            <p>Email: <a href="mailto:email@example.com">Duongtntcs200432.com</a></p>
+            <p>Facebook: <a href="https://linkedin.com/in/thuyduong" target="_blank">lhttps://www.facebook.com/thuy.duong.74705</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Thùy Dương.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
